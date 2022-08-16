@@ -22,14 +22,14 @@ function Song({ order, track }) {
      hover:bg-gray-900 rounded-lg cursor-pointer "
       onClick={playSong}
     >
-      <div className="flex items-center space-x-4 gap-4d">
+      <div className="flex items-center space-x-4">
         <p>{order + 1}</p>
-        <Image
+        <img
           className="w-10 h-10"
           src={track.track.album.images[0].url}
           alt=""
-          width={40}
-          height={40}
+          // width={40}
+          // height={40}
         />
         <div>
           <p className="w-36 lg:w-64 truncate">{track.track.name}</p>
